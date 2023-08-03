@@ -1117,25 +1117,27 @@ p {
 }
 
 @media (max-width: 768px) {
+  * {
+    outline: 1px solid tomato;
+  }
   .header {
     height: 80rem;
     background: #444444;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1003;
+  }
+  .header .header_wrap {
+    border-bottom: 1px solid #000;
   }
   .header .header_wrap.on {
-    background: #fff;
-    transition: 0.5s;
-  }
-  .header .header_wrap.on .inner {
-    color: #444444;
+    display: none;
   }
   .header .header_wrap .inner {
+    height: 80rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     color: #fff;
   }
   .header .header_wrap .inner h1 .logo {
@@ -1154,11 +1156,11 @@ p {
     width: calc(100% - 90rem);
     border-right: 1px solid #7b7b7b;
     transition: 0.5s;
+    z-index: 999;
     /* 다단 메뉴 영역 */
   }
   .header .header_wrap .inner .gnb.on {
     left: 0;
-    z-index: 1000;
   }
   .header .header_wrap .inner .gnb::before {
     display: none;
@@ -1508,6 +1510,9 @@ p {
   .Main__content .main_recruit .content .txt_box strong {
     font-size: 36rem;
     margin: 0 0 16rem 0;
+  }
+  .Main__content .main_recruit .content .txt_box p {
+    width: 100%;
   }
 }
 @media (max-width: 768px) {

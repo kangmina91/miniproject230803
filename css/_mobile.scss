@@ -1,9 +1,9 @@
 // 헤더섹션
 @media (max-width: 768px) {
 
-  // * {
-  //   outline: 1px solid tomato;
-  // }
+  * {
+    outline: 1px solid tomato;
+  }
 
   .header {
     height: 80rem;
@@ -11,35 +11,23 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1003;
 
     .header_wrap {
+      border-bottom: 1px solid $color-black;
+
       &.on {
-        background: $color-white;
-        transition: .5s;
-
-        .inner {
-          color: $color-dark;
-
-          h1 {
-
-
-
-            .logo {}
-          }
-        }
+        display: none;
       }
 
       .inner {
+        height: 80rem;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
         color: $color-white;
 
         h1 {
-
           .logo {
-
             position: fixed;
             z-index: 8999;
             top: 23rem;
@@ -57,11 +45,10 @@
           width: calc(100% - 90rem);
           border-right: 1px solid $color-gf ;
           transition: 0.5s;
-
+          z-index: 999;
 
           &.on {
             left: 0;
-            z-index: 1000;
           }
 
           /* 다단 메뉴 영역 */
@@ -574,6 +561,10 @@
           strong {
             font-size: 36rem;
             margin: 0 0 16rem 0;
+          }
+
+          p {
+            width: 100%;
           }
 
         }
