@@ -1,0 +1,81 @@
+.footer {
+
+    background: $color-line3;
+    padding: 50rem 0;
+    color: $color-dark;
+    border-top: 1px solid $color-line;
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 60rem;
+
+        h2 {
+            img {
+                width: 100%;
+            }
+        }
+
+        .ft_tel {
+            display: none;
+        }
+    }
+
+    .left {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 8rem;
+
+        >ul li {
+            position: relative;
+        }
+
+        ul li~li::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -10rem;
+            transform: translate(0, -50%);
+            width: 1rem;
+            height: 12rem;
+            background: $color-gf;
+        }
+    }
+
+    .privacy {
+        font-weight: 700;
+    }
+
+    .sns {
+        margin: 0 0 8rem 0;
+
+        i {
+            font-size: 30rem;
+        }
+    }
+
+    .contact,
+    .adress {
+        display: flex;
+        gap: 20rem;
+        font-size: 16rem;
+
+        li {
+            a {
+                line-height: 20rem;
+            }
+        }
+    }
+
+    .adress {
+        margin: 0 0 8rem 0;
+    }
+
+    span {
+        font-size: 14rem;
+    }
+
+}

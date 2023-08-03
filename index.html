@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13주차 과제 - fullpage 부광약품</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery.fullpage.min.js"></script>
+    <script src="./js/jquery.easings.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/scrolloverflow.min.js"></script>
+    <script src="./js/custom.js" defer></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="header_wrap">
+                <div class="inner">
+                    <h1>
+                        <a href="/" class="logo">
+                            <span class="blind">
+                                부광약품
+                            </span>
+                        </a>
+                    </h1>
+                    <nav class="gnb">
+                        <ul>
+                            <li><a href="/">회사소개</a>
+                                <ul class="sub_menu">
+                                    <li><a href="">기업소개</a></li>
+                                    <li><a href="">비전&미션</a></li>
+                                    <li><a href="">연혁</a></li>
+                                    <li><a href="">공장소개</a></li>
+                                    <li><a href="">관계사</a></li>
+                                    <li><a href="">찾아오시는 길</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/">R&D</a>
+                                <ul class="sub_menu">
+                                    <li><a href="">중앙연구소 소개</a></li>
+                                    <li><a href="">파이프라인</a></li>
+                                    <li><a href="">Lurasidone</a></li>
+                                    <li><a href="">JM-010</a></li>
+                                    <li><a href="">SOL-804</a></li>
+                                    <li><a href="">오픈이노베이션</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="/">ESG</a>
+                                <ul class="sub_menu">
+
+                                    <li><a href="">환경경영</a></li>
+                                    <li><a href="">사회적책임경영</a></li>
+                                    <li><a href="">거버넌스&윤리경영</a></li>
+                                    <li><a href="">ESG게시판</a></li>
+                                    <li><a href="">사이버 신문고</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/">NEWS</a>
+                            </li>
+                            <li><a href="/">IR</a>
+                                <ul class="sub_menu">
+                                    <li><a href="">공시정보</a></li>
+                                    <li><a href="">재무정보</a></li>
+                                    <li><a href="">IR자료</a></li>
+                                    <li><a href="">ANNUAL REPORT</a></li>
+                                    <li><a href="">분석레포트</a></li>
+                                    <li><a href="">공고사항</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/">PRODUCTS</a>
+                                <ul class="sub_menu">
+                                    <li><a href="">통합검색</a></li>
+                                    <li><a href="">처방의약품</a></li>
+                                    <li><a href="">일반의약품</a></li>
+                                    <li><a href="">생활용품</a></li>
+                                    <li><a href="">제품광고</a></li>
+                                    <li><a href="">제품변경정보</a></li>
+                                    <li><a href="">약국정보찾기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/">채용정보</a>
+                                <ul class="sub_menu">
+                                    <li><a href="">채용절차</a></li>
+                                    <li><a href="">채용공고</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="customer">
+                        <ul>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">부광 온라인몰</a></li>
+                            <li><a href="">CONTACT US</a></li>
+                            <li><a href="">KR</a></li>
+                        </ul>
+                        <div class="map">
+                            <a href=""> <i class="bi bi-list-nested"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="mobile_btn">
+            <button>
+                <span class="blind">모바일 버튼</span>
+            </button>
+        </div>
+        <aside class="aside">
+            <ul>
+                <li class="on"><a href="#main"><span class="blind">main</span></a></li>
+                <li><a href="#main_introduce"><span class="blind">sub01</span></a></li>
+                <li><a href="#main_pipeline"><span class="blind">sub02</span></a></li>
+                <li><a href="#main_merit"><span class="blind">sub03</span></a></li>
+                <li><a href="#main_esg"><span class="blind">sub04</span></a></li>
+                <li><a href="#main_news"><span class="blind">sub05</span></a></li>
+                <li><a href="#main_recruit"><span class="blind">sub06</span></a></li>
+                <li><a href="#footer"><span class="blind">footer</span></a></li>
+            </ul>
+        </aside>
+
+        <div class="to_top">
+            <a href="#main"> <i class="xi-arrow-top"></i> <span class="blind">main</span></a>
+        </div>
+
+
+        <div class="Main__content">
+            <section class="section main">
+                <div class="title inner">
+                    <h2 class="blind">Main</h2>
+                </div>
+                <div class="main_slide swiper">
+                    <div class="swiper-wrapper">
+                        <figure class="swiper-slide itm itm01">
+                            <div class="bg"></div>
+                        </figure>
+                        <figure class="swiper-slide itm itm02">
+                            <div class="bg"></div>
+                        </figure>
+                        <figure class="swiper-slide itm itm03">
+                            <div class="bg"></div>
+                        </figure>
+                        <figure class="swiper-slide itm itm04">
+                            <div class="bg"></div>
+                        </figure>
+                    </div>
+                    <div class="txt_box">
+                        <div class="txtwrap">
+                            <h3>
+                                Making Tomorrow Better
+                            </h3>
+                            <p>끊임없는 신약 연구개발과 우수의약품 생산을 위해 정진하여 인류의 건강한 미래를 추구합니다.</p>
+                        </div>
+                        <div class="ctr">
+                            <div class="vprev"><i class="bi bi-chevron-left"></i></div>
+                            <div class="swiper-pagination vpaging"></div>
+                            <div class="vnext"><i class="bi bi-chevron-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll"></div>
+
+            </section>
+
+
+
+
+
+
+
+            <section class="section sub01 main_introduce">
+                <div class="title inner">
+                    <h2 class="blind">Introduce</h2>
+                </div>
+                <div class="content">
+
+                    <div class="img_box">
+                        <span class="blind">왼쪽 이미지</span>
+                    </div>
+
+                    <div class="txt_box">
+                        <div class="txt">
+                            <strong>부광약품은 건강한 미래의 꿈을 실현하기 위해 한 걸음 한 걸음 나아가고 있습니다.</strong>
+                            <p>부광약품은 연구개발 전문 회사로 입지를 굳건히 하며 내실을 다지는 동시에,
+                                신약개발과 외형 성장에도 많은 노력을 기울이고 있습니다. 오픈이노베이션의 선두주자로 강화된 입지를 적극적으로 활용해 글로벌 제약사로 도약해
+                                나가겠습니다.
+                            </p>
+                            <a href="" class="obtn">View More <span class="circle_line"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="section sub02 main_pipeline">
+                <div class="title inner">
+                    <h2>Pipeline</h2>
+                </div>
+                <div class="content">
+                    <div class="itm itm01">
+                        <figure class="bg"></figure>
+                        <div class="txt">
+                            <strong>
+                                Lurasidone
+                            </strong>
+                            <div class="trans">
+                                <p>뇌내 도파민 수용체를 차단하여 작용하는 조현병 및 양극성 우울증 치료제</p>
+                                <a href="" class="vbtn">View More <span class="circle_line"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itm itm02">
+                        <figure class="bg"></figure>
+                        <div class="txt">
+                            <strong>
+                                JM-010
+                            </strong>
+                            <div class="trans">
+                                <p>이미 안전성이 입증된 약물을 배합한 신약재창출 약물로 파킨슨병 환자의 이상운동증 치료제</p>
+                                <a href="" class="vbtn">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itm itm03">
+                        <figure class="bg"></figure>
+                        <div class="txt">
+                            <strong>
+                                SOL-804
+                            </strong>
+                            <div class="trans">
+
+                                <p>제형개발 전문 자회사인 Dyna Therapeutics가
+                                    개발하고 있는 전이성 거세저항성 전립선암 치료제</p>
+                                <a href="" class="vbtn">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itm itm04">
+                        <figure class="bg"></figure>
+                        <div class="txt">
+                            <strong>
+                                오픈이노베이션
+                            </strong>
+                            <div class="trans">
+                                <p>외부 기술과 내부의 R&D 역량을 결합하여
+                                    R&D의 효율성과 사업화 성과 극대화</p>
+                                <a href="" class="vbtn">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="section sub03 main_merit">
+                <div class="content">
+                    <div class="img_wrap">
+                        <div class="txt_box">
+                            <h2>Merit</h2>
+                            <strong>신약 개발과 사업화를 통해 글로벌 경쟁력 구축</strong>
+                            <p>조인트벤처 설립, 리서치 협업, M&A 등 다양한 형태의 R&D 오픈이노베이션
+
+                                전략을 추진하여 파이프라인과 사업모델을 확보해 나가고 있습니다.</p>
+
+                        </div>
+                        <div class="itm_box">
+                            <div class="itm itm01">
+                                <span>01</span>
+                                <strong>파이프라인의 확대</strong>
+                                <p> 오픈이노베이션을 통한 혁신적인
+                                    신약 후보물질의 개발을 진행하고 있습니다.</p>
+                                <figure>
+                                    <img src="./images/sec5_icon1.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="itm itm02">
+                                <span>02</span>
+                                <strong>전략적 투자</strong>
+                                <p> 오픈이노베이션을 통한 혁신적인
+                                    신약 후보물질의 개발을 진행하고 있습니다.</p>
+                                <figure>
+                                    <img src="./images/sec5_icon2.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="itm itm03">
+                                <span>03</span>
+                                <strong>신약개발 및 선순환 투자</strong>
+                                <p>오픈이노베이션을 통한 혁신적인
+                                    신약 후보물질의 개발을 진행하고 있습니다.</p>
+                                <figure>
+                                    <img src="./images/sec5_icon3.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="itm itm04">
+                                <span>04</span>
+                                <strong>사업모델의 다양화</strong>
+                                <p>오픈이노베이션을 통한 혁신적인
+                                    신약 후보물질의 개발을 진행하고 있습니다.</p>
+                                <figure>
+                                    <img src="./images/sec5_icon4.png" alt="">
+                                </figure>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="section sub04 main_esg">
+                <div class="content inner">
+                    <div class="img_box">
+
+                    </div>
+                    <div class="title_box">
+                        <h2>ESG</h2>
+                        <strong>건강하고 행복한 사회, 지속가능한 미래를 위한 부광약품의 앞선 발걸음</strong>
+                        <p>
+                            부광약품은 지속가능한 미래를 위해 환경, 거버넌스를 중심으로 혁신 계획을 수립하고 실현해 나가고 있습니다.
+                        </p>
+                        <a href="" class="obtn">View More <span class="circle_line"></span></a>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+            <section class="section sub05 main_news">
+                <div class="content inner">
+                    <div class="title_box">
+                        <h2>News</h2>
+                        <strong>부광약품의 최신소식을 알려드립니다.</strong>
+                        <p>새로운 소식 및 다양한 뉴스를 확인하세요.</p>
+                    </div>
+                    <div class="news_box">
+                        <div class="swiper news_slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide card">
+                                    <a href="">
+                                        <div class="img_box">
+                                            <img src="./images/file_thumb_1688366541wi9zl7gk07.jpg" alt="">
+                                        </div>
+                                        <div class="txt_box">
+                                            <strong>부광약품, B형간염 치료제 “타프리드정” 출시</strong>
+                                            <p>
+                                                부광약품은 B형간염 치료제 “타프리드정”을 출시했다고 밝혔다. 이로써 국내 제약사간 테노포비르알라페나미드 염변경 제네릭 약물의
+                                                시장 진입
+                                                경쟁도 뜨거워질 전망이다. </p>
+                                            <span>2023.07.03</span><span class="material-symbols-outlined">
+                                                trending_flat
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide card">
+                                    <a href="">
+                                        <div class="img_box">
+                                            <img src="./images/file_thumb_1686748466vvs4dfp3n9.jpg" alt="">
+                                        </div>
+                                        <div class="txt_box">
+                                            <strong>부광약품, 뇌전증 치료제 ‘오르필 시럽’ 성상 개선</strong>
+                                            <p>
+                                                부광약품의 오르필은 발프로산나트륨(Sodium Valproate)을 주성분으로 하는 뇌전증 치료제로 서방정, 주사제, 시럽제
+                                                3가지
+                                                제형이 있다. </p>
+                                            <span>2023.06.12</span><span class="material-symbols-outlined">
+                                                trending_flat
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="swiper-slide card">
+                                    <a href="">
+                                        <div class="img_box">
+                                            <img src="./images/file_thumb_16867483895k633hc9xi.png" alt="">
+                                        </div>
+                                        <div class="txt_box">
+                                            <strong>부광약품 시린메드 소비자만족도 조사 결과 91% 이상 만족</strong>
+                                            <p>
+
+                                                부광약품은 시린이 기능성 치약 브랜드 '시린메드 에프'의 자체 만족도 조사 결과를 발표했다. </p>
+                                            <span>2023.04.19</span><span class="material-symbols-outlined">
+                                                trending_flat
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="swiper-slide card">
+                                    <a href="">
+                                        <div class="img_box">
+                                            <img src="./images/file_thumb_1686748284ld2cqtwmsy.png" alt="">
+                                        </div>
+                                        <div class="txt_box">
+                                            <strong>부광약품, 맛있는 성장기 어린이 영양제 비타엔젤 츄어블정 출시</strong>
+                                            <p>
+
+                                                부광약품은 성장기 어린이 영양제 ‘비타엔젤 츄어블정’을 출시했다고 밝혔다. </p>
+                                            <span>2023.04.06</span><span class="material-symbols-outlined">
+                                                trending_flat
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="swiper-slide card">
+                                    <a href="">
+                                        <div class="img_box">
+                                            <img src="./images/file_thumb_1686748217g0h44e6e71.png" alt="">
+                                        </div>
+                                        <div class="txt_box">
+                                            <strong>부광약품, 불면증 치료제 잘레딥캡슐 발매</strong>
+                                            <p>
+
+                                                부광약품은 2023년 4월 1일, 불면증 치료제인 잘레딥캡슐(Zaledeep Cap) 5mg, 10mg을 발매하였다고 밝혔다.
+                                            </p>
+                                            <span>2023.04.03</span><span class="material-symbols-outlined">
+                                                trending_flat
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide card">
+                                    <a href="">
+                                        <div class="img_box">
+                                            <img src="./images/file_thumb_1686748145o989gh7ezl.png" alt="">
+                                        </div>
+                                        <div class="txt_box">
+                                            <strong>부광약품, 관절∙뼈건강 “메가조인트” 건강기능식품 출시</strong>
+                                            <p>
+                                                부광약품은 관절과 뼈 건강을 한번에 관리할 수 있는 건강기능식품 “메가조인트”를 출시했다고 밝혔다. </p>
+                                            <span>2023.03.30</span><span class="material-symbols-outlined">
+                                                trending_flat
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                            <div class="swiper-pagination02"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <section class="section sub06 main_recruit">
+                <div class="content">
+                    <div class="txt_box">
+                        <h2>Recruit</h2>
+                        <strong>젊은 생각, 앞선 걸음으로 만드는 새로운 미래</strong>
+                        <p>인간존중, 생명존중을 최우선으로 하는 부광약품에서 비전과 가치를 공유할 열정 품은 당신을 찾습니다.</p>
+                        <a href="" class="rbtn">채용안내 바로가기<span class="material-symbols-outlined">
+                                trending_flat
+                            </span></a>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <footer class="footer section fp-auto-height">
+                <div class="content inner">
+                    <h2><a href=""><a href=""><img src="./images/foot_logo.jpg" alt=""></a></h2>
+                    <div class="left">
+
+                        <ul class="privacy">
+                            <li><a href="">개인정보처리방침</a></li>
+                        </ul>
+                        <ul class="contact">
+                            <li><a href="">부광약품(주)</a></li>
+                            <li><a href="">주소 : 서울특별시 동작구 상도로 5 부광약품주식회사 (우)06955</a></li>
+                            <li><a href="">대표이사 : 유희원, 이우현</a></li>
+                            <li><a href="">사업자 등록번호 : 118-81-00450</a></li>
+
+                        </ul>
+
+                        <ul class="adress">
+                            <li><a href="tel:02-828-8114">대표전화 : 02-828-8114</a></li>
+                            <li><a href="tel:02-828-8029">팩스 : 02-828-8029</a></li>
+                            <li><a href="tel:080-933-2233">문의 : 080-933-2233</a></li>
+                        </ul>
+
+                        <ul class="sns">
+                            <li><a href="https://smartstore.naver.com/bkonline" target="_blank"><i
+                                        class="xi-naver"></i></a></li>
+                        </ul>
+
+                        <span>Copyright &copy; 2023 BUKWANG PHARM.CO.LTD. All Rights Reserved.</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

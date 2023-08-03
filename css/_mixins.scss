@@ -1,0 +1,147 @@
+// 풀페이지 기준
+
+$size-pc: 1840rem;
+$size-gap: 80rem;
+$shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+@mixin inner() {
+  margin: 0 auto;
+  padding: 0 $size-gap / 2;
+}
+
+@mixin flex_center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex_sb() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@keyframes TxtDownAni {
+  0% {
+    opacity: 0;
+    transform: translate(0, -50rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes TxtDownAni02 {
+  0% {
+    opacity: 0;
+    transform: translate(0, -25rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes TxtUpAni {
+  0% {
+    opacity: 0;
+    transform: translate(0, 50rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes TxtrightAni {
+  0% {
+    opacity: 0;
+    transform: translate(-100rem, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes TxtleftAni {
+  0% {
+    opacity: 0;
+    transform: translate(100rem, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translate(0, 9rem);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0, 18rem);
+    opacity: 0;
+  }
+}
+
+@keyframes circle {
+  0% {
+    transform: translate(-50%, -50%);
+    outline: 0 solid rgba(255, 255, 255, 1);
+
+  }
+
+  80% {
+    outline: 0 solid rgba(255, 255, 255, 1);
+  }
+
+  100% {
+    transform: translate(-50%, 90rem);
+    outline: 20rem solid rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(150%);
+  }
+}
+
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

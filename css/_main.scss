@@ -1,0 +1,687 @@
+.Main__content {
+
+  // 메인
+  .main {
+
+
+    .main_slide {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: #1d1643;
+
+      .swiper-slide {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+
+        .bg {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          transform: scale(1.1);
+          transition: all 1.4s;
+        }
+
+      }
+
+      .itm01 .bg {
+        background: url(../images/visual1.jpg) no-repeat;
+        background-size: cover;
+      }
+
+      .itm02 .bg {
+        background: url(../images/visual2.jpg) no-repeat;
+        background-size: cover;
+      }
+
+      .itm03 .bg {
+        background: url(../images/visual3.jpg) no-repeat;
+        background-size: cover;
+      }
+
+      .itm04 .bg {
+        background: url(../images/visual4.jpg) no-repeat;
+        background-size: cover;
+      }
+
+      .swiper-slide-active .bg {
+        transform: scale(1);
+      }
+
+
+
+      .txt_box {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 100;
+        width: 100%;
+        text-align: center;
+
+        .txtwrap {
+          h3 {
+            font-size: 70rem;
+            color: $color-white;
+            letter-spacing: 0.05em;
+            margin: 0 0 16rem 0;
+
+            &::before {
+              display: block;
+              content: "";
+              width: 1rem;
+              height: 60rem;
+              margin: 0 auto 20rem;
+              background: rgba(255, 255, 255, 0.7);
+            }
+          }
+
+          p {
+            font-size: 18rem;
+            letter-spacing: 0.025em;
+            color: rgba(255, 255, 255, 0.7);
+          }
+        }
+
+        .ctr {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 300rem;
+          margin: 50rem auto 0 auto;
+
+          .vprev,
+          .vnext {
+            width: 13rem;
+            height: 24rem;
+            cursor: pointer;
+
+            i {
+              color: $color-white;
+              font-size: 24rem;
+              font-weight: 100;
+            }
+          }
+
+
+          .vpaging {
+            position: static;
+            z-index: 100;
+            margin: 0 55rem;
+            text-align: center;
+
+            span {
+              display: inline-block;
+              vertical-align: top;
+              box-sizing: border-box;
+              position: relative;
+              width: 8rem;
+              height: 8rem;
+              margin: 8rem 10rem 0;
+              border: 1rem solid #fff;
+              background: 0;
+              opacity: 1;
+
+              &.swiper-pagination-bullet-active {
+                opacity: 1;
+                width: 22rem;
+                border-radius: 5rem;
+                background: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .scroll {
+      overflow: hidden;
+      position: absolute;
+      left: 50%;
+      bottom: 60rem;
+      z-index: 100;
+      width: 1rem;
+      height: 100rem;
+      background: rgba(255, 255, 255, 0.3);
+
+      &::after {
+        display: block;
+        content: "";
+        width: 1rem;
+        height: 40rem;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        animation: scroll 1s infinite ease;
+      }
+    }
+  }
+
+  // 서브섹션01
+  .main_introduce {
+    background: #74B567;
+
+
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      color: $color-white;
+      width: 100%;
+      height: 100%;
+
+      .img_box {
+        width: 100%;
+        height: 100%;
+        background: url(../images/sec2_bg1.jpg) no-repeat center center/cover;
+
+      }
+
+
+      .txt_box {
+        background: url(../images/sec2_bg2.png) no-repeat 300% 300%;
+
+
+        .txt {
+          position: relative;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          max-width: 600rem;
+          padding: 0 15rem;
+
+          strong {
+            position: relative;
+            display: block;
+            font-size: 48rem;
+            line-height: 72rem;
+            font-weight: 700;
+            margin: 0 0 16rem 0;
+
+            &::before {
+              content: "";
+              position: absolute;
+              top: -30rem;
+              left: 0;
+              width: 80rem;
+              height: 1rem;
+              background: $color-line2;
+            }
+
+          }
+
+          p {
+            font-size: 18rem;
+            word-break: keep-all;
+            font-weight: 400;
+            line-height: 27rem;
+            margin: 0 0 48rem 0;
+          }
+
+
+
+        }
+      }
+    }
+  }
+
+  // 서브섹션2
+  .main_pipeline {
+    position: relative;
+
+    .title {
+
+
+      h2 {
+        color: $color-white;
+        font-size: 20rem;
+        position: absolute;
+        left: 40rem;
+        top: 15%;
+        z-index: 999;
+      }
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400rem, 1fr));
+      height: 100%;
+
+      .itm {
+        overflow: hidden;
+        position: relative;
+
+
+        &:hover {
+          .txt {
+            strong {
+              transform: translateY(-80rem);
+              transition: .5s;
+            }
+
+            .trans {
+              visibility: visible;
+              transform: translateY(-56rem);
+              opacity: 1;
+              transition: .5s;
+            }
+          }
+        }
+
+        .bg {
+          width: 100%;
+          height: 100%;
+          transform: scale(1.1);
+          transition: .5s;
+
+          &:hover {
+            transform: scale(1);
+          }
+        }
+
+        .txt {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          color: $color-white;
+          width: 100%;
+          padding: 56rem;
+
+          strong {
+            display: block;
+            transform: translateY(40rem);
+            transition: .5s;
+            letter-spacing: 0.025em;
+            font-size: 40rem;
+            font-weight: 500;
+          }
+
+          .trans {
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(40rem);
+            transition: .5s;
+
+            p {
+              font-size: 18rem;
+              font-weight: 500;
+              color: $color-gray;
+              margin: 0 0 48rem 0;
+            }
+          }
+
+        }
+      }
+
+      .itm01 .bg {
+        background: url(../images/sec3_bg1.jpg) no-repeat center center/cover;
+      }
+
+      .itm02 .bg {
+        background: url(../images/sec3_bg2.jpg) no-repeat center center/cover;
+      }
+
+      .itm03 .bg {
+        background: url(../images/sec3_bg3.jpg) no-repeat center center/cover;
+      }
+
+      .itm04 .bg {
+        background: url(../images/sec3_bg4.jpg) no-repeat center center/cover;
+      }
+    }
+  }
+
+  // 서브섹션03
+  .main_merit {
+
+    .content {
+      color: $color-white;
+      padding: 0 40rem;
+      width: 100%;
+      height: 100%;
+
+      .img_wrap {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: url(../images/sec5_bg.jpg) no-repeat 100% 80%;
+        background-size: 100% 756rem;
+
+        .txt_box {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, 0);
+          margin: -240rem 0 0 0;
+          text-align: center;
+          width: 100%;
+          padding: 0 20rem;
+
+          h2 {
+            font-size: 20rem;
+            margin: 0 0 48rem 0;
+          }
+
+          strong {
+            display: block;
+            font-size: 48rem;
+            font-weight: 700;
+            letter-spacing: 0.025em;
+            margin: 0 0 24rem 0;
+          }
+
+          p {
+            width: 550rem;
+            margin: 0 auto;
+            font-size: 18rem;
+            color: $color-line;
+          }
+        }
+
+        .itm_box {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+          padding: 0 80rem;
+          margin: 250rem 0 0 0;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300rem, 1fr));
+          gap: 60rem;
+
+          .itm {
+            position: relative;
+
+            &:not(:last-child)::after {
+              position: absolute;
+              right: -20rem;
+              top: 50%;
+              transform: translate(0, -50%);
+              content: "";
+              width: 1rem;
+              height: 100%;
+              background: $color-rgba25505;
+            }
+
+            span {
+              display: block;
+              font-size: 20rem;
+
+              margin: 0 0 24rem 0;
+            }
+
+            strong {
+              display: block;
+              font-size: 28rem;
+              font-weight: 600;
+              letter-spacing: 0.025em;
+              margin: 0 0 24rem 0;
+            }
+
+            p {
+              line-height: 24rem;
+              color: $color-line;
+              margin: 0 0 48rem 0;
+            }
+
+            figure {}
+
+          }
+
+        }
+      }
+    }
+  }
+
+  // 서브섹션04
+  .main_esg {
+    position: relative;
+    background: #748f79;
+
+
+    .content {
+      width: 100%;
+      height: 100%;
+      background: url(../images/sec6_bg2.png) no-repeat right bottom;
+
+      .img_box {
+        width: 100%;
+        height: 100%;
+        background: url(../images/sec6_bg1.jpg) no-repeat bottom left;
+        transition: 3s;
+        background-size: 1440rem 790rem;
+        transform: scale(0);
+        transform-origin: 0% 100%;
+
+        &.on {
+          transform: scale(1);
+        }
+      }
+
+      .title_box {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: $color-white;
+        margin: 50rem 0 0 600rem;
+        width: 600rem;
+
+        h2 {
+          font-size: 20rem;
+          margin: 0 0 48rem 0;
+        }
+
+        strong {
+          display: block;
+          font-size: 48rem;
+          font-weight: 700;
+          line-height: 64rem;
+          letter-spacing: 0.025em;
+          margin: 0 0 24rem 0;
+        }
+
+        p {
+          width: 550rem;
+          font-size: 18rem;
+          color: $color-gray;
+          width: 400rem;
+          margin: 0 0 48rem 0;
+        }
+      }
+    }
+  }
+
+  // 서브섹션05
+  .main_news {
+    position: relative;
+    background: $color-line3;
+    color: $color-black;
+
+    .content {
+      .title_box {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, 0);
+        text-align: center;
+        width: 100%;
+        margin: -320rem 0 0 0;
+
+        h2 {
+          font-size: 20rem;
+          margin: 0 0 24rem 0;
+        }
+
+        strong {
+          display: block;
+          font-size: 48rem;
+          font-weight: 700;
+          letter-spacing: 0.025em;
+          margin: 0 0 24rem 0;
+        }
+
+        p {
+          width: 400rem;
+          font-size: 18rem;
+          color: $color-gf;
+          margin: 0 auto;
+        }
+      }
+
+      .news_box {
+        overflow: hidden;
+        margin: 240rem 0 0 0;
+
+        .news_slide {
+          position: relative;
+          height: 500rem;
+
+          .swiper-pagination02 {
+            position: absolute;
+            bottom: 16rem;
+            left: 50%;
+            z-index: 1000;
+            font-size: 16rem;
+            font-weight: 500;
+            margin: 0 0 0 -24rem;
+          }
+
+          .swiper-scrollbar {
+            position: absolute;
+            bottom: 0;
+          }
+
+          .swiper-scrollbar-drag {
+            background: #7BBD26;
+          }
+
+          .card {
+            background: $color-white;
+            border-radius: 20rem;
+            overflow: hidden;
+            height: 450rem;
+            max-width: 400rem;
+
+            .img_box {
+              margin: 0 0 32rem 0;
+              transition: 0.5s;
+
+              img {
+                height: 200rem;
+                width: 100%;
+                object-fit: contain;
+              }
+
+              &:hover {
+                transform: scale(1.05);
+              }
+            }
+
+
+            .txt_box {
+              padding: 0 20rem;
+
+              strong {
+                display: block;
+                font-size: 24rem;
+                line-height: 30rem;
+                margin: 0 0 8rem 0;
+              }
+
+              p {
+                font-size: 16rem;
+                line-height: 20rem;
+                margin: 0 0 8rem 0;
+              }
+
+              span {
+                position: absolute;
+                bottom: 20rem;
+                font-size: 14rem;
+
+              }
+
+              .material-symbols-outlined {
+                font-variation-settings:
+                  'FILL' 0,
+                  'wght' 200,
+                  'GRAD' 200,
+                  'opsz' 48;
+
+                font-size: 24rem;
+                right: 20rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 서브섹션06
+  .main_recruit {
+    position: relative;
+    background: url(../images/sec8_bg.jpg) no-repeat;
+    color: $color-white;
+
+    .content {
+
+
+      .txt_box {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+
+
+        h2 {
+          font-size: 20rem;
+          margin: 0 0 48rem 0;
+        }
+
+        strong {
+          display: block;
+          font-size: 48rem;
+          font-weight: 700;
+          letter-spacing: 0.025em;
+          margin: 0 0 24rem 0;
+        }
+
+        p {
+          width: 400rem;
+          font-size: 18rem;
+          color: $color-line;
+          margin: 0 auto 48rem auto;
+        }
+
+        a {
+
+          span {
+            vertical-align: middle;
+            margin: 0 0 0 20rem;
+          }
+
+          .material-symbols-outlined {
+            font-variation-settings:
+              'FILL' 0,
+              'wght' 100,
+              'GRAD' 100,
+              'opsz' 48
+          }
+
+        }
+      }
+    }
+  }
+}
