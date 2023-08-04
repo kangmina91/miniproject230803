@@ -83,19 +83,19 @@
 
                 >ul {
                     display: flex;
-                    gap: 80rem;
 
-                    a {
-                        display: block;
-                        line-height: 80rem;
-                        white-space: nowrap;
-
-                        font-size: 20rem;
-                        font-weight: 500;
-                    }
 
                     >li {
                         position: relative;
+
+
+                        >a {
+                            display: block;
+                            line-height: 80rem;
+                            padding: 0 40rem;
+                            font-size: 22rem;
+                            font-weight: 500;
+                        }
 
                         &::after {
                             content: "";

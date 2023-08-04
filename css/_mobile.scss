@@ -67,15 +67,17 @@
             color: $color-gray;
             margin: 120rem 0 0 0;
 
-            a {
-              line-height: 48rem;
-              margin: 0 30rem;
-              font-size: 24rem;
-              font-weight: 500;
-            }
 
             >li {
               height: max-content;
+
+
+              >a {
+                line-height: 48rem;
+                margin: 0 30rem;
+                font-size: 24rem;
+                padding: 0;
+              }
 
               &::after {
                 display: none;
@@ -103,6 +105,7 @@
               a {
                 color: $color-line;
                 line-height: 36rem;
+                padding: 0 30rem;
                 width: auto;
               }
             }
