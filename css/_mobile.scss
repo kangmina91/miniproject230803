@@ -2,30 +2,35 @@
 @media (max-width: 768px) {
 
   .header {
-    height: 80rem;
-    background: $color-rgba05;
-    position: fixed;
-    top: 0;
-    left: 0;
-
     .header_wrap {
 
+      height: 80rem;
+      background: $color-rgba05;
 
-      &.on {
-        display: none;
+      &:hover {
+        background: $color-rgba05;
+        transition: none;
+
+        .inner {
+          h1 {
+            .logo {
+              background: url(../images/logo1.png) no-repeat;
+            }
+          }
+        }
       }
 
       .inner {
-        height: 40rem;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        color: $color-white;
+        &.on {
+          display: none;
+        }
 
         h1 {
+
           .logo {
             position: fixed;
-            z-index: 8999;
+            top: 23rem;
+            z-index: 1004;
           }
         }
 
@@ -50,18 +55,17 @@
             display: none;
           }
 
-          &.on::before {
+          &:hover::before {
             display: none;
           }
 
 
-          ul {
+          >ul {
             display: flex;
             gap: 0;
             flex-direction: column;
             color: $color-gray;
             margin: 120rem 0 0 0;
-            height: 180rem;
 
             a {
               display: block;
@@ -73,6 +77,7 @@
             }
 
             >li {
+              height: max-content;
 
               &::after {
                 display: none;
@@ -84,32 +89,28 @@
 
             }
 
-            >li:hover {
-              .sub_menu {
-                display: none;
-              }
-            }
-
             .sub_menu {
+              display: none;
+
               position: static;
-              transform: translate(0, -40%);
+              transform: translate(0, 0);
+
               width: 100%;
               text-align: left;
-              display: none;
               transition: none;
               padding: 0;
+              opacity: 1;
+              visibility: visible;
 
               li:hover {
-                a {
-                  font-weight: 700;
-                }
+                display: none;
               }
 
               a {
                 color: $color-line;
                 font-size: 16rem;
                 line-height: 36rem;
-                width: 100%;
+                width: auto;
               }
             }
           }
@@ -224,7 +225,7 @@
     // 메인
     .main {
       .main_slide {
-        height: 100vh;
+        height: 850rem;
 
         .txt_box {
           .txtwrap {
@@ -255,13 +256,14 @@
 
     // 서브섹션01
     .main_introduce {
-      margin: 25rem 0;
+      margin: 0;
 
       .content {
         grid-template-columns: repeat(auto-fit, minmax(300rem, 1fr));
 
         .img_box {
-          height: 500rem;
+          order: 1;
+          height: 350rem;
           background: url(../images/sec2_bg1.jpg) no-repeat center center/cover;
 
         }
@@ -369,7 +371,7 @@
 
     // 서브섹션03
     .main_merit {
-      margin: 25rem 0;
+      margin: 25rem 0 0 0;
 
       .content {
         padding: 0;
@@ -452,16 +454,16 @@
 
     // 서브섹션04
     .main_esg {
-      margin: 25rem 0;
+      margin: 0;
 
 
       .content {
         padding: 0;
-        height: 850rem;
+        height: 800rem;
 
         .img_box {
           width: 100%;
-          height: 400rem;
+          height: 350rem;
           background: url(../images/sec6_bg1.jpg) no-repeat top center/cover;
           transition: none;
           transform-origin: none;
@@ -474,7 +476,7 @@
         }
 
         .title_box {
-          margin: 450rem 0 0 0;
+          margin: 420rem 0 0 0;
           width: 100%;
           padding: 0 20rem;
           height: 100%;
@@ -508,7 +510,7 @@
 
     // 서브섹션05
     .main_news {
-      margin: 25rem 0;
+      margin: 0;
 
 
       .content {
@@ -548,8 +550,8 @@
     // 서브섹션06
     .main_recruit {
       background: url(../images/sec8_bg.jpg) no-repeat 50%;
-      margin: 25rem 0 0 0;
 
+      margin: 0;
 
       .content {
 

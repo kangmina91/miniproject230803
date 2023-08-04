@@ -1,4 +1,6 @@
 .header {
+
+
     position: fixed;
     top: 0;
     left: 0;
@@ -9,7 +11,8 @@
 
         transition: .5s;
 
-        &.on {
+        // 헤더 워랩이 후버되었을 시
+        &:hover {
             background: $color-white;
             transition: .5s;
 
@@ -24,11 +27,25 @@
             }
         }
 
+
         .inner {
             display: flex;
             align-items: center;
             justify-content: space-between;
             color: $color-white;
+
+            &.on {
+
+                color: $color-dark;
+
+                h1 {
+                    .logo {
+                        background: url(../images/logo2.png) no-repeat;
+                    }
+                }
+
+            }
+
 
             h1 {
                 .logo {
@@ -45,6 +62,7 @@
             .gnb {
                 margin: 0 0 0 160rem;
 
+
                 /* 다단 메뉴 영역 */
                 &::before {
                     content: "";
@@ -58,11 +76,12 @@
                 }
 
                 /* 마우스 갖다댈 때 높이 생기게 하기 */
-                &.on::before {
+                &:hover::before {
                     height: 60rem;
                 }
 
-                ul {
+
+                >ul {
                     display: flex;
                     gap: 80rem;
 
@@ -97,6 +116,8 @@
                             background: $color-main;
                         }
 
+
+
                     }
 
                     >li:hover {
@@ -108,6 +129,9 @@
                     }
 
                     .sub_menu {
+                        display: flex;
+                        gap: 40rem;
+
                         position: absolute;
                         top: 80rem;
                         left: 50%;
