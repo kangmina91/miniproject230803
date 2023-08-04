@@ -1016,10 +1016,11 @@ p {
   font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 200, "opsz" 48;
   font-size: 24rem;
   right: 20rem;
+  bottom: 17rem;
 }
 .Main__content .main_recruit {
   position: relative;
-  background: url(../images/sec8_bg.jpg) no-repeat;
+  background: url(../images/sec8_bg.jpg) no-repeat center center/cover;
   color: #fff;
 }
 .Main__content .main_recruit .content .txt_box {

@@ -619,6 +619,7 @@
 
                 font-size: 24rem;
                 right: 20rem;
+                bottom: 17rem;
               }
             }
           }
@@ -630,7 +631,7 @@
   // 서브섹션06
   .main_recruit {
     position: relative;
-    background: url(../images/sec8_bg.jpg) no-repeat;
+    background: url(../images/sec8_bg.jpg) no-repeat center center/cover;
     color: $color-white;
 
     .content {
