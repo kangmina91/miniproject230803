@@ -1474,8 +1474,11 @@ p {
   .Main__content .main_news {
     margin: 25rem 0;
   }
+  .Main__content .main_news .content {
+    height: 600rem;
+  }
   .Main__content .main_news .content .title_box {
-    margin: -350rem 0 0 0;
+    margin: -380rem 0 0 0;
   }
   .Main__content .main_news .content .title_box h2 {
     font-size: 20rem;
@@ -1490,7 +1493,7 @@ p {
     font-size: 16rem;
   }
   .Main__content .main_news .content .news_box {
-    margin: 160rem 0 0 0;
+    margin: 250rem 0 0 0;
   }
 }
 @media (max-width: 768px) {
