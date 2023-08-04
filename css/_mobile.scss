@@ -5,11 +5,11 @@
 
     .header_wrap {
       height: 80rem;
-      background: $color-rgba05;
+      background: #333;
 
       &:hover {
-        background: $color-rgba05;
         transition: none;
+        background: #333;
 
         .inner {
           h1 {
@@ -40,7 +40,7 @@
           top: 0;
           bottom: 0;
           left: -100%;
-          background: #444;
+          background: #666;
           padding: 0 15rem;
           width: calc(100% - 90rem);
           transition: 0.5s;
@@ -293,7 +293,7 @@
 
     // 서브섹션2
     .main_pipeline {
-      margin: 25rem 0;
+      margin: 50rem 0;
 
       .title {
         h2 {
@@ -325,6 +325,7 @@
           .bg {
             transform: scale(1);
             transition: 0;
+            filter: grayscale(30%);
 
             &:hover {
               transform: scale(1);
