@@ -539,18 +539,18 @@
 
       .news_box {
         overflow: hidden;
-        margin: 240rem 0 0 0;
+        margin: 300rem 0 0 0;
 
         .news_slide {
           position: relative;
-          height: 500rem;
+          height: 580rem;
 
           .swiper-pagination02 {
             position: absolute;
-            bottom: 16rem;
+            bottom: 18rem;
             left: 50%;
             z-index: 1000;
-            font-size: 16rem;
+            font-size: 18rem;
             font-weight: 500;
             margin: 0 0 0 -24rem;
           }
@@ -568,7 +568,7 @@
             background: $color-white;
             border-radius: 20rem;
             overflow: hidden;
-            height: 450rem;
+            height: 500rem;
             max-width: 400rem;
 
             .img_box {
@@ -576,7 +576,7 @@
               transition: 0.5s;
 
               img {
-                height: 200rem;
+                height: 250rem;
                 width: 100%;
                 object-fit: cover;
               }

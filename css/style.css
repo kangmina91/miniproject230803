@@ -950,18 +950,18 @@ p {
 }
 .Main__content .main_news .content .news_box {
   overflow: hidden;
-  margin: 240rem 0 0 0;
+  margin: 300rem 0 0 0;
 }
 .Main__content .main_news .content .news_box .news_slide {
   position: relative;
-  height: 500rem;
+  height: 580rem;
 }
 .Main__content .main_news .content .news_box .news_slide .swiper-pagination02 {
   position: absolute;
-  bottom: 16rem;
+  bottom: 18rem;
   left: 50%;
   z-index: 1000;
-  font-size: 16rem;
+  font-size: 18rem;
   font-weight: 500;
   margin: 0 0 0 -24rem;
 }
@@ -976,7 +976,7 @@ p {
   background: #fff;
   border-radius: 20rem;
   overflow: hidden;
-  height: 450rem;
+  height: 500rem;
   max-width: 400rem;
 }
 .Main__content .main_news .content .news_box .news_slide .card .img_box {
@@ -984,7 +984,7 @@ p {
   transition: 0.5s;
 }
 .Main__content .main_news .content .news_box .news_slide .card .img_box img {
-  height: 200rem;
+  height: 250rem;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
