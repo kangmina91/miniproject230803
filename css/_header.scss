@@ -118,9 +118,8 @@
 
                         &:hover {
                             .sub_menu {
-                                top: 80rem;
-                                opacity: 1;
-                                visibility: visible;
+                                display: flex;
+                                gap: 30rem;
                             }
                         }
 
@@ -128,19 +127,13 @@
 
 
                     .sub_menu {
-                        display: flex;
-                        gap: 40rem;
-
                         position: absolute;
                         top: 80rem;
                         left: 50%;
                         transform: translate(-50%, 0);
                         width: max-content;
-                        text-align: center;
-                        opacity: 0;
-                        visibility: hidden;
 
-                        transition: 0.3s;
+                        display: none;
 
                         li:hover {
 

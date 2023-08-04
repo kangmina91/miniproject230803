@@ -86,7 +86,6 @@
               }
 
               &:hover {
-
                 .sub_menu {
                   display: none;
                 }
@@ -95,25 +94,12 @@
             }
 
             .sub_menu {
-              display: none;
 
               position: static;
               transform: translate(0, 0);
-
-              width: max-content;
               text-align: left;
-              transition: none;
-              opacity: 1;
-              visibility: visible;
 
-              li:hover {
-                display: none;
-
-                a {
-                  display: none;
-                }
-
-              }
+              display: none;
 
               a {
                 color: $color-line;
