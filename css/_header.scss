@@ -116,17 +116,16 @@
                             background: $color-main;
                         }
 
-
-
-                    }
-
-                    >li:hover {
-                        .sub_menu {
-                            top: 80rem;
-                            opacity: 1;
-                            visibility: visible;
+                        &:hover {
+                            .sub_menu {
+                                top: 80rem;
+                                opacity: 1;
+                                visibility: visible;
+                            }
                         }
+
                     }
+
 
                     .sub_menu {
                         display: flex;

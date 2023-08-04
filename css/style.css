@@ -1141,7 +1141,7 @@ p {
   }
   .header .header_wrap .inner h1 .logo {
     position: fixed;
-    top: 23rem;
+    top: 22rem;
     z-index: 1004;
   }
   .header .header_wrap .inner .gnb {
@@ -1174,11 +1174,9 @@ p {
     margin: 120rem 0 0 0;
   }
   .header .header_wrap .inner .gnb > ul a {
-    display: block;
     line-height: 48rem;
-    white-space: nowrap;
     margin: 0 30rem;
-    font-size: 20rem;
+    font-size: 24rem;
     font-weight: 500;
   }
   .header .header_wrap .inner .gnb > ul > li {
@@ -1191,23 +1189,28 @@ p {
   .header .header_wrap .inner .gnb > ul > li:hover::after {
     display: none;
   }
+  .header .header_wrap .inner .gnb > ul > li:hover .sub_menu {
+    display: none;
+  }
   .header .header_wrap .inner .gnb > ul .sub_menu {
     display: none;
     position: static;
     transform: translate(0, 0);
-    width: 100%;
+    width: -moz-max-content;
+    width: max-content;
     text-align: left;
     transition: none;
-    padding: 0;
     opacity: 1;
     visibility: visible;
   }
   .header .header_wrap .inner .gnb > ul .sub_menu li:hover {
     display: none;
   }
+  .header .header_wrap .inner .gnb > ul .sub_menu li:hover a {
+    display: none;
+  }
   .header .header_wrap .inner .gnb > ul .sub_menu a {
     color: #ddd;
-    font-size: 16rem;
     line-height: 36rem;
     width: auto;
   }
