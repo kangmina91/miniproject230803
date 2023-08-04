@@ -144,11 +144,11 @@ $(function () {
 
   // 모바일 메뉴 작동
   $('.gnb>ul>li>a').on('click', function (e) {
+
     if ($('.gnb').hasClass('on')) {
-      // 풀페이지에서는  e.preventDefault(); 를 지워야 메뉴 터치 시 이동이 가능
       e.preventDefault();
       $(this).next().stop().slideToggle();
-      $(this).parent().siblings().find('.sub_menu').slideUp();
+      $(this).parent().siblings().find('.sub_menu').stop().slideUp();
     }
   });
 

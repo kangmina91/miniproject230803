@@ -1,19 +1,15 @@
 // 헤더섹션
 @media (max-width: 768px) {
 
-  * {
-    outline: 1px solid tomato;
-  }
-
   .header {
     height: 80rem;
-    background: $color-dark;
+    background: $color-rgba05;
     position: fixed;
     top: 0;
     left: 0;
 
     .header_wrap {
-      border-bottom: 1px solid $color-black;
+
 
       &.on {
         display: none;
@@ -40,10 +36,9 @@
           top: 0;
           bottom: 0;
           left: -100%;
-          background: rgba($color: #c3c3c3, $alpha: 1.0);
+          background: #7e7d7d;
           padding: 0 15rem;
           width: calc(100% - 90rem);
-          border-right: 1px solid $color-gf ;
           transition: 0.5s;
           z-index: 999;
 
@@ -106,15 +101,13 @@
               padding: 0;
 
               li:hover {
-
                 a {
                   font-weight: 700;
                 }
-
               }
 
               a {
-                color: $color-dark;
+                color: $color-line;
                 font-size: 16rem;
                 line-height: 36rem;
                 width: 100%;
@@ -126,7 +119,6 @@
         .customer {
           display: none;
         }
-
       }
     }
   }
@@ -140,7 +132,7 @@
   /* 탑스크롤 */
   .to_top {
     position: fixed;
-    bottom: 100rem;
+    bottom: 30rem;
     right: 30rem;
     z-index: 999;
 
@@ -170,7 +162,7 @@
     z-index: 1004;
     width: 30rem;
     height: 30rem;
-    background: $color_black;
+    background: $color_white;
     border-radius: 5rem;
 
     &::before,
@@ -180,7 +172,7 @@
       position: absolute;
       inset: 14rem 5rem auto 5rem;
       height: 2rem;
-      background: $color_white;
+      background: $color_black;
     }
 
     &.on::before {
@@ -209,7 +201,7 @@
         content: "";
         position: absolute;
         height: 2rem;
-        background: $color_white;
+        background: $color_black;
       }
 
       &::before {
@@ -233,7 +225,7 @@
     // 메인
     .main {
       .main_slide {
-        height: 100vh;
+        height: 850rem;
 
         .txt_box {
           .txtwrap {
@@ -594,14 +586,11 @@
         padding: 20rem 0;
         border-bottom: 1px solid $color-dark;
 
-
         i {
           vertical-align: middle;
         }
       }
-
     }
-
 
     .left {
       ul li~li::before {
