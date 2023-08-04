@@ -1436,6 +1436,7 @@ p {
   }
   .Main__content .main_esg .content {
     padding: 0;
+    height: 850rem;
   }
   .Main__content .main_esg .content .img_box {
     width: 100%;
@@ -1450,9 +1451,10 @@ p {
     transform: scale(1);
   }
   .Main__content .main_esg .content .title_box {
-    margin: 192rem 0 0 0;
+    margin: 450rem 0 0 0;
     width: 100%;
     padding: 0 20rem;
+    height: 100%;
   }
   .Main__content .main_esg .content .title_box h2 {
     font-size: 20rem;
@@ -1464,7 +1466,8 @@ p {
     margin: 0 0 16rem 0;
   }
   .Main__content .main_esg .content .title_box p {
-    width: 100%;
+    width: 90%;
+    word-break: keep-all;
     margin: 0 0 48rem 0;
   }
 }
@@ -1473,7 +1476,7 @@ p {
     margin: 25rem 0;
   }
   .Main__content .main_news .content .title_box {
-    margin: -380rem 0 0 0;
+    margin: -350rem 0 0 0;
   }
   .Main__content .main_news .content .title_box h2 {
     font-size: 20rem;

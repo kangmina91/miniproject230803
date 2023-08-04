@@ -455,8 +455,11 @@
     .main_esg {
       margin: 25rem 0;
 
+
       .content {
         padding: 0;
+        height: 850rem;
+
 
         .img_box {
           width: 100%;
@@ -473,9 +476,11 @@
         }
 
         .title_box {
-          margin: 192rem 0 0 0;
+          margin: 450rem 0 0 0;
           width: 100%;
           padding: 0 20rem;
+          height: 100%;
+
 
           h2 {
             font-size: 20rem;
@@ -489,7 +494,8 @@
           }
 
           p {
-            width: 100%;
+            width: 90%;
+            word-break: keep-all;
             margin: 0 0 48rem 0;
           }
         }
@@ -508,7 +514,7 @@
 
       .content {
         .title_box {
-          margin: -380rem 0 0 0;
+          margin: -350rem 0 0 0;
 
           h2 {
             font-size: 20rem;
