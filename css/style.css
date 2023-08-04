@@ -1276,7 +1276,7 @@ p {
 }
 @media (max-width: 768px) {
   .Main__content .main .main_slide {
-    height: 850rem;
+    height: 100vh;
   }
   .Main__content .main .main_slide .txt_box .txtwrap {
     padding: 0 20rem;
