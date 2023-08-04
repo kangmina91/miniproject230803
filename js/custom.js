@@ -148,7 +148,7 @@ $(function () {
     if ($('.gnb').hasClass('on')) {
       e.preventDefault();
       $(this).next().stop().slideToggle();
-      $(this).parent().siblings().find('.sub_menu').stop().slideUp();
+      $(this).parent().siblings().find('.sub_menu').slideUp();
     }
   });
 

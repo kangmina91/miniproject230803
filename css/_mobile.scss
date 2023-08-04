@@ -16,7 +16,7 @@
       }
 
       .inner {
-        height: 80rem;
+        height: 40rem;
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -26,7 +26,6 @@
           .logo {
             position: fixed;
             z-index: 8999;
-            top: 23rem;
           }
         }
 
@@ -36,7 +35,7 @@
           top: 0;
           bottom: 0;
           left: -100%;
-          background: #7e7d7d;
+          background: #444;
           padding: 0 15rem;
           width: calc(100% - 90rem);
           transition: 0.5s;
@@ -60,8 +59,8 @@
             display: flex;
             gap: 0;
             flex-direction: column;
-            color: black;
-            margin: 100rem 0 0 0;
+            color: $color-gray;
+            margin: 120rem 0 0 0;
             height: 180rem;
 
             a {
