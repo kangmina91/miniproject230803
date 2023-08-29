@@ -311,6 +311,21 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+@media (max-width: 860px) {
+  html {
+    font-size: 0.1302083333vw;
+  }
+}
+@media (max-width: 1023px) {
+  html {
+    font-size: 0.0977517107vw;
+  }
+}
+@media (max-width: 1480px) {
+  html {
+    font-size: 0.0675675676vw;
+  }
+}
 .header {
   position: fixed;
   top: 0;
