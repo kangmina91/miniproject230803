@@ -451,12 +451,12 @@
 
     // 서브섹션04
     .main_esg {
-      margin: 0;
+      margin: 0 0 0 0;
 
 
       .content {
         padding: 0;
-        height: 800rem;
+        height: 900rem;
 
         .img_box {
           width: 100%;
@@ -466,6 +466,7 @@
           transform-origin: none;
           background-size: none;
           transform: scale(1);
+          margin: -44rem 0 0 0;
 
           &.on {
             transform: scale(1);
